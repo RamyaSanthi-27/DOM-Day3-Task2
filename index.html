@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title"><p id="description">DOM Manipulation with Forms</p></h1>
+    <form id="form" id="first-name">
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="firstName" placeholder="Enter your first name" required><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="lastName" placeholder="Enter your last name" required><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea><br>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required><br>            
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">Male
+            <input type="radio" id="female" name="gender" value="Female">Female<br>
+
+            <label for="food" id="food">Choice of Food <span style="font: 1em sans-serif; background: #bbec9f;" >(Select at least 2) </span> :</label><br>
+            <input type="checkbox" name="food" value="Pizza">PlainDosa 
+            <input type="checkbox" name="food" value="Burger">MiniIdly
+            <input type="checkbox" name="food" value="Pasta">Poori
+            <input type="checkbox" name="food" value="Salad">Pongal
+            <input type="checkbox" name="food" value="Ice Cream">Ice Cream<br>
+
+            <label  for="state" >State :</label>
+            <select name="state" id="state">  
+                             
+                <option value="AP">AndraPradesh</option>
+                <option value="KE"> Kerala</option>
+                <option value="KA">Karnadaga</option>
+                <option value="TN"> TamilNadu</option>
+                <option value="UP">UthraPradesh</option>
+                <option value="MP">MadyaPradesh</option>
+            </select><br>
+
+            <label  for="country">Country :</label>
+            <select name="country" id="country">
+                <option value="SE">Select</option> 
+                <option value="USA">United States of America</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="India">India</option>
+            </select><br>
+
+
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    <div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
